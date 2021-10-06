@@ -1,2 +1,3 @@
-# algorithm-studry
-algorithm-studry
+# algorithm-study
+
+꾸준하기 🐥
