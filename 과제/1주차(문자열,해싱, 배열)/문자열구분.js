@@ -1,21 +1,27 @@
-function solution(s){
-  s.sort((x,y)=>x.length-y.length);
-  // 1. 글자길이 오름차순 정렬
-  let size=s[0].length;
-  
-  let cnt=0;
-  for(let i=0;i<size;i++){
-    cnt++;
-    if(s[0][i]==s[1][i] && s[0][i]==s[2][i]){
-      continue;
+function solution(words) {
+
+    let answer, i;
+    for(i=0;i<words[0].length;i++){
+        let sH=new Map();
+        let count=1;
+        let flag=false;
+        for(let j=0;j<words.length;j++){
+            let sub=words[j].substring(0,i+1);
+            if(sH.has(sub)){
+                count++;
+            }
+            sH.set(sub,1);
+            if((j==words.length-1) && count!==words.length){
+                flag=true;
+                break;
+            }
+        }
+        if(flag)
+            break;
     }
-    else
-      break;
-
+    answer=i+1;
+    return answer;
   }
-  return cnt;
-
-}
-
-let array=["seeasue","sesseysu","semeas"];
-console.log(solution(array));
+console.log(solution(["seetw", "seebsw", "seasw"]));
+console.log(solution(["ackky","kabck","yokkcs"]));
+console.log(solution(["longtong","longlong","longbig"]));
