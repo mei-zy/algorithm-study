@@ -18,3 +18,5 @@ for (let [k,v] of map1){
 }
 ```
 ## 문자열 구분하기
+
+<a href="https://velog.io/@mingsomm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B5%AC%EB%B6%84" target="_blank">문자열 구분하기 정리</a>
