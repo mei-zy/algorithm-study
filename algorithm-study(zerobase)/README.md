@@ -13,15 +13,16 @@
 * 프로그래머스 </br>
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week1/pg-camouflage.js">위장(LV.2)</a>
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week1/programmers.js">완주하지 못한 선수(LV.1)</a>
+</br>
 ** 투포인트 ** | </br>
 * 백준</br>
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week1/B2003.js">2003 수들의 합2</a>
 
 ## WEEK2
-** 큐 ** | </br>
+**큐** | </br>
 * 백준
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B11866.js">11866 요세푸스문제 0 </a>
-
+</br>
 ** 그리디 ** | </br>
 * 백준
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B5585.js">5585 거스름돈</a>
