@@ -69,6 +69,23 @@ class maxHeap {
 // <---------문제----------->
 
 function solution(n){
+  let maxH=new maxHeap();
+  let answer=0;
+  //  1. 날짜로 오름차순 정렬
+  n.sort((a,b)=>b[1] - a[1]);
+  console.log(n);
+  maxDay=n[0][1];
+  let j=0;
+  for(let day=maxDay;day>=1;day--){
+    for(;j<n.length;j++){
+      if(n[j][1]<day) break
+      maxH.insert(n[j][0]);
+      // console.log("j: "+j+" day : "+day);
+      // console.log(maxH);
+    }
+    if(maxH.size()>0) answer+=maxH.get();
+  }
+  return answer;
 }
 console.log(solution([[50,2],[20,1],[40,2],[60,3],[30,3],[30,1]]));
 console.log(solution([[50,2],[40,2],[20,1],[10,1]]));
