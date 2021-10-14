@@ -64,9 +64,36 @@ class maxHeap {
   }
 }
 
-let maxH = new maxHeap();
-maxH.insert(3);
-maxH.insert(10);
-maxH.insert(1);
-maxH.insert(11);
-console.log(maxH);
+// <--- 문제 시작 --->
+
+function solution(tasks){
+  let maxH=new maxHeap();
+  let answer=0;
+  tasks.sort((a,b)=>a[0]-b[0]);
+  // 1. tasks 기간이 짧은 순으로 정렬해준다.
+  let maxDay=[...tasks].sort((a, b) => b[1] - a[1])[0][1];
+  let maxD=[...tasks].sort((a, b) => b[1] - a[1])[0][0];
+
+  let stack=[];
+  let j=0;
+  // 2. 최대로 일을 해야하는 기간을 정해준다.
+  let b;
+  for(let day=1;day<=maxDay;){
+    for(;j<tasks.length;j++){
+      let flag=false;
+      for(let t=1;t<maxD;t++){
+        if(tasks[j][0]!==t){
+          flag=true;
+          b=t;
+          break;
+        }
+        maxH.insert(tasks[j][0]);
+      }
+    }
+    day+=2;
+    answer=parseInt(day/2);
+  }
+  return answer;
+}
+
+console.log(solution([[3,11],[5,10],[3,10],[2,10],[4,12]]));
