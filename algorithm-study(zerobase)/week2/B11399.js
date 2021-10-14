@@ -8,6 +8,7 @@ let input = fs.readFileSync(filePath).toString().split("\n");
 let splited=input[1].split(' ');
 splited.sort((a,b)=>parseInt(a)-parseInt(b));
 
+
 let sum=0,
     count=0;
 for(let i=0;i<splited.length;i++){
