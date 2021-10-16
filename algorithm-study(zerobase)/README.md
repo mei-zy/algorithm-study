@@ -3,6 +3,8 @@
 * team : 박민지 송진영 조용우 김효식
 * goal : 꾸준히 하기 🐥
 
+<a href="https://complete-mitten-f53.notion.site/51da55aec93442b2aa6031dff0ccd6e1"> 알고리즘 스터디 진행 노션 </a>
+
 ## WEEK1
 ### 문자열 |</br>
 백준
@@ -48,3 +50,4 @@
 ### DFS&BFS|
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B2606.js">2606 바이러스</a> - DFS
+<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js">1696 숨바꼭질</a> - BFS
