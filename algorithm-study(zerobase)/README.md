@@ -31,6 +31,11 @@
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week1/B2003.js">2003 수들의 합2</a>
 
 ## WEEK2
+### 스택 |
+프로그래머스
+<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/pg-upfunction.js">기능 개발</a>
+
+
 ### 큐 |
 <p></p>
 백준
@@ -50,4 +55,5 @@
 ### DFS&BFS|
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B2606.js">2606 바이러스</a> - DFS
+
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js">1696 숨바꼭질</a> - BFS
