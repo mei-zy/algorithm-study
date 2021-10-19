@@ -24,7 +24,7 @@
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week1/programmers.js">완주하지 못한 선수(LV.1)</a>
 
-<p></p>
+
 
 ### 투포인트 |
 
@@ -40,14 +40,14 @@
 
 
 ### 큐 |
-<p></p>
+
 * 백준
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B11866.js">11866 요세푸스문제 0 </a>
 <p></p>
 
 ### 그리디 |
-<p></p>
+
 * 백준
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B5585.js">5585 거스름돈</a>
@@ -63,4 +63,13 @@
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js">1696 숨바꼭질</a> - BFS
 
-<a href="https://github.com/urther/algorithm-study/commit/d154afcd15a8ac4a47691eb271d3f0e66fe81db8">10026 적록색약</a> - BFS
+## WEEK3
+
+### BFS |
+
+* 백준
+
+<a href="https://github.com/urther/algorithm-study/commit/d154afcd15a8ac4a47691eb271d3f0e66fe81db8">10026 적록색약</a> - BFS (설명- <a href="https://velog.io/@mingsomm/BOJ-%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD-BFS"> 풀이 설명</a>
+
+
+<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B7652.js">7652 나이트로 이동</a> -BFS
