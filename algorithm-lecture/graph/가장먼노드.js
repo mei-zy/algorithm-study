@@ -40,9 +40,6 @@ class minHeap{
     size(){
         return this.heap.length-1;
     }
-    top(){
-        return this.heap[1];
-    }
 }
 
 function solution(n, edge) {
