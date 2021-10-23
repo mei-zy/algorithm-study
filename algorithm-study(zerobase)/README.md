@@ -73,3 +73,10 @@
 
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B7652.js">7652 나이트로 이동</a> -BFS
+
+
+> 코딩테스트 대비 문제 풀이
+<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1764.js">1764 듣보잡 (문자열) </a>  |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B17298.js"> 17298 오큰수 (스택) </a>  |  <a href="https://github.com/urther/algorithm-study/commit/5f6fef2d265640cf1bf2d9e4a06e7910b4be705f"> 2493 탑(스택) </a>   |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1644.js"> 1644 소수의 연속 합(투포인트) </a>   |  <a href="https://github.com/urther/algorithm-study/commit/617a6c6c19279bbc70a2cbde67e67f46d38d4948"> 1806 부분합 (투포인트) </a>
+
+
+## WEEK 4
