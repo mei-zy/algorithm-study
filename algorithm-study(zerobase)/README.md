@@ -69,13 +69,13 @@
 
 * 백준
 
-<a href="https://github.com/urther/algorithm-study/commit/d154afcd15a8ac4a47691eb271d3f0e66fe81db8">10026 적록색약</a> - BFS (설명- <a href="https://velog.io/@mingsomm/BOJ-%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD-BFS"> 풀이 설명</a>
+<a href="https://github.com/urther/algorithm-study/commit/d154afcd15a8ac4a47691eb271d3f0e66fe81db8">10026 적록색약</a> - BFS (설명- <a href="https://velog.io/@mingsomm/BOJ-%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD-BFS"> 풀이 설명</a>)
 
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B7652.js">7652 나이트로 이동</a> -BFS
 
 
-코딩테스트 대비 문제 풀이
+### 코딩테스트 대비 문제 풀이
 
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1764.js">1764 듣보잡 (문자열) </a>  |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B17298.js"> 17298 오큰수 (스택) </a>  |  <a href="https://github.com/urther/algorithm-study/commit/5f6fef2d265640cf1bf2d9e4a06e7910b4be705f"> 2493 탑(스택) </a>   |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1644.js"> 1644 소수의 연속 합(투포인트) </a>   |  <a href="https://github.com/urther/algorithm-study/commit/617a6c6c19279bbc70a2cbde67e67f46d38d4948"> 1806 부분합 (투포인트) </a>
