@@ -75,8 +75,17 @@
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B7652.js">7652 나이트로 이동</a> -BFS
 
 
-> 코딩테스트 대비 문제 풀이
+코딩테스트 대비 문제 풀이
+
+
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1764.js">1764 듣보잡 (문자열) </a>  |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B17298.js"> 17298 오큰수 (스택) </a>  |  <a href="https://github.com/urther/algorithm-study/commit/5f6fef2d265640cf1bf2d9e4a06e7910b4be705f"> 2493 탑(스택) </a>   |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1644.js"> 1644 소수의 연속 합(투포인트) </a>   |  <a href="https://github.com/urther/algorithm-study/commit/617a6c6c19279bbc70a2cbde67e67f46d38d4948"> 1806 부분합 (투포인트) </a>
 
 
-## WEEK 4
+## WEEK 4 - 알고리즘 복습
+### DP
+
+<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b18353.js"> 18353 병사배치</a>
+
+<a href="https://github.com/urther/algorithm-study/commit/2187ca57c69116beeb83e5a26d275b5ca9319d43"> 1890 점프</a>
+
+<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b2110.js">2110 공유기 설치</a>
