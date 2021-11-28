@@ -19,46 +19,22 @@
 
 
 ## WEEK2
-### 스택 |
-* 프로그래머스
 
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/pg-upfunction.js">기능 개발</a>
-
-
-### 큐 |
-
-* 백준
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B11866.js">11866 요세푸스문제 0 </a>
-<p></p>
-
-### 그리디 |
-
-* 백준
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B5585.js">5585 거스름돈</a>
-
-<a href="https://www.acmicpc.net/problem/11399">11399 ATM </a>
-<p></p>
-
-### DFS&BFS|
-
-* 백준
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B2606.js">2606 바이러스</a> - DFS
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js">1696 숨바꼭질</a> - BFS
+| 문제 출처 | 분류 | 이름 | 링크 |
+|----------|------|------|------|
+| 프로그래머스 | 스택 | 기능개발 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/pg-upfunction.js">링크</a> |
+| 백준 | 큐 | 11866 요세푸스 0 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B11866.js">링크</a> |
+| 백준 | 그리디 | 5585 거스름돈 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B5585.js"> 링크 </a> |
+| 백준 | 그리디 | 11399 ATM | <a href="https://www.acmicpc.net/problem/11399"> 링크 </a> |
+| 백준 | DFS | 2606 바이러스 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B2606.js"> 링크 </a>|
+| 백준 | BFS | 1696 숨바꼭질 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js"> 링크 </a>|
 
 ## WEEK3
 
-### BFS |
-
-* 백준
-
-<a href="https://github.com/urther/algorithm-study/commit/d154afcd15a8ac4a47691eb271d3f0e66fe81db8">10026 적록색약</a> - BFS (설명- <a href="https://velog.io/@mingsomm/BOJ-%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD-BFS"> 풀이 설명</a>)
-
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B7652.js">7652 나이트로 이동</a> -BFS
+| 문제출처 | 분류 | 이름 | 링크 | 비고 |
+|----------|------|------|------|----|
+| 백준 | BFS | 10026 적록색약 | <a href="https://github.com/urther/algorithm-study/commit/d154afcd15a8ac4a47691eb271d3f0e66fe81db8">링크</a> | <a href="https://velog.io/@mingsomm/BOJ-%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD-BFS">풀이설명</a>|
+| 백준 | BFS | 7652 나이트로 이동 |<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B7652.js">링크</a> | |
 
 
 ### 코딩테스트 대비 문제 풀이
