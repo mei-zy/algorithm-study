@@ -20,14 +20,14 @@
 
 ## WEEK2
 
-| 문제 출처 | 분류 | 이름 | 링크 |
-|----------|------|------|------|
-| 프로그래머스 | 스택 | 기능개발 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/pg-upfunction.js">링크</a> |
-| 백준 | 큐 | 11866 요세푸스 0 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B11866.js">링크</a> |
-| 백준 | 그리디 | 5585 거스름돈 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B5585.js"> 링크 </a> |
-| 백준 | 그리디 | 11399 ATM | <a href="https://www.acmicpc.net/problem/11399"> 링크 </a> |
-| 백준 | DFS | 2606 바이러스 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B2606.js"> 링크 </a>|
-| 백준 | BFS | 1696 숨바꼭질 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js"> 링크 </a>|
+| 문제 출처 | 분류 | 이름 | 링크 | 비고 |
+|----------|------|------|------|----|
+| 프로그래머스 | 스택 | 기능개발 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/pg-upfunction.js">링크</a> | |
+| 백준 | 큐 | 11866 요세푸스 0 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B11866.js">링크</a> | |
+| 백준 | 그리디 | 5585 거스름돈 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B5585.js"> 링크 </a> | |
+| 백준 | 그리디 | 11399 ATM | <a href="https://www.acmicpc.net/problem/11399"> 링크 </a> | | 
+| 백준 | DFS | 2606 바이러스 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B2606.js"> 링크 </a>| |
+| 백준 | BFS | 1696 숨바꼭질 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week2/B1697.js"> 링크 </a>| <a href="https://velog.io/@mingsomm/BOJ-%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88-BFS">풀이 설명</a> |
 
 ## WEEK3
 
@@ -39,9 +39,13 @@
 
 ### 코딩테스트 대비 문제 풀이
 
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1764.js">1764 듣보잡 (문자열) </a>  |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B17298.js"> 17298 오큰수 (스택) </a>  |  <a href="https://github.com/urther/algorithm-study/commit/5f6fef2d265640cf1bf2d9e4a06e7910b4be705f"> 2493 탑(스택) </a>   |  <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1644.js"> 1644 소수의 연속 합(투포인트) </a>   |  <a href="https://github.com/urther/algorithm-study/commit/617a6c6c19279bbc70a2cbde67e67f46d38d4948"> 1806 부분합 (투포인트) </a>
-
+| 문제출처 | 분류 | 이름 | 링크 | 비고 |
+|----------|------|------|------|----|
+| 백준 | 스택 | 2493 탑 | <a href="https://github.com/urther/algorithm-study/commit/5f6fef2d265640cf1bf2d9e4a06e7910b4be705f"> 링크 </a> |<a href="https://velog.io/@mingsomm/BOJ-2493-%ED%83%91-%EB%B0%98%EB%A1%80-%ED%8F%AC%ED%95%A8">풀이 링크</a> |
+| 백준 | 문자열 | 1764 듣보잡 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1764.js"> 링크</a> | |
+| 백준 | 스택 | 17298 오큰수 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/B17298.js"> 링크</a>| |
+| 백준 | 투포인트 | 1644 소수의 연속 합 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1644.js">링크 </a> | |
+| 백준 | 투포인트 | 1806 부분합 | <a href="https://github.com/urther/algorithm-study/commit/617a6c6c19279bbc70a2cbde67e67f46d38d4948"> 링크 </a> | |
 
 ## WEEK 4 - 알고리즘 복습
 ### DP
