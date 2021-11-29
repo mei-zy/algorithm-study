@@ -47,21 +47,19 @@
 | 백준 | 투포인트 | 1644 소수의 연속 합 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week3/b1644.js">링크 </a> | |
 | 백준 | 투포인트 | 1806 부분합 | <a href="https://github.com/urther/algorithm-study/commit/617a6c6c19279bbc70a2cbde67e67f46d38d4948"> 링크 </a> | |
 
-## WEEK 4 - 알고리즘 복습
-### DP
+## WEEK 4 
 
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b18353.js"> 18353 병사배치</a>
-
-<a href="https://github.com/urther/algorithm-study/commit/2187ca57c69116beeb83e5a26d275b5ca9319d43"> 1890 점프</a>
-
-<a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b2110.js">2110 공유기 설치</a>
+|----------|------|------|------|----|
+| 백준 | DP | 18353 병사배치 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b18353.js"> 링크 </a> | |
+| 백준 | DP | 1890 점프 | <a href="https://github.com/urther/algorithm-study/commit/2187ca57c69116beeb83e5a26d275b5ca9319d43">링크</a> | |
+| 백준 | DP | 2110 공유기 설치 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b2110.js">링크</a> | |
 
 ## WEEK6
 | 문제출처 | 분류 | 이름 | 링크 | 비고 |
 |----------|------|------|------|----|
 | 백준 | DFS | 4963 섬의 개수 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week6(prepare-coding-test)/4963.js"> 링크 </a> | |
 | 백준 | BFS | 5014 스타트링크 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week6(prepare-coding-test)/5014.js">링크</a> | |
-| 리트코드 | 스택 | 735 asteroid-collision| <https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week6(prepare-coding-test)/leet735.js">링크</a> | |
+| 리트코드 | 스택 | 735 asteroid-collision| <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week6(prepare-coding-test)/leet735.js">링크</a> | |
 
 ## WEEK7 
 | 미니프로젝트 기간 |
