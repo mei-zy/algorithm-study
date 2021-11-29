@@ -55,3 +55,18 @@
 <a href="https://github.com/urther/algorithm-study/commit/2187ca57c69116beeb83e5a26d275b5ca9319d43"> 1890 점프</a>
 
 <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b2110.js">2110 공유기 설치</a>
+
+## WEEK8
+| 문제출처 | 분류 | 이름 | 링크 | 비고 |
+|----------|------|------|------|----|
+| 백준 | 위상정렬 + DP | 2056 작업 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week8/2056.js"> 링크 </a> | <a href="https://velog.io/@mingsomm/BOJ-2056-%EC%9E%91%EC%97%85-%EC%9C%84%EC%83%81%EC%A0%95%EB%A0%AC-DP">풀이설명</a> |
+ | 백준 | 투포인트 | 2470 두 용액 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week8/2470.js"> 링크 </a> |  |
+  | 백준 | 스택 | 9935 문자열폭발 | <a href="https://github.com/urther/algorithm-study/commit/ac3a08bb8bd8abf1b3fe3bcc1750bae9e41212ef"> 링크 </a> |  |
+  | 리트코드 | 투포인트 | 264 ugly number | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week8/leet264.js">링크</a>| |
+  | 리트코드 | 투포인트 | 313 Super ugly number| <https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week8/leet313.js">링크</a>| | 
+  
+
+## WEEK9
+| 문제출처 | 분류 | 이름 | 링크 | 비고 |
+|----------|------|------|------|----|
+| 백준 | 정렬 | 2170 선긋기 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week9/2170.js"> 링크 </a> | |
