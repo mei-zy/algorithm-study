@@ -55,6 +55,14 @@
 | 백준 | DP | 1890 점프 | <a href="https://github.com/urther/algorithm-study/commit/2187ca57c69116beeb83e5a26d275b5ca9319d43">링크</a> | |
 | 백준 | DP | 2110 공유기 설치 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week4/b2110.js">링크</a> | |
 
+## WEEK5
+| 문제출처 | 분류 | 이름 | 링크 | 비고 |
+|----------|------|------|------|----|
+| 백준 | 이분탐색 | 2343 기타 레슨 | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week5/2343.js"> 링크 </a> | |
+| 백준 | 스택 | 16120 PPAP | <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week5/16120.js">링크</a> | |
+| 백준 | BFS | 1012 유기농 배추| <a href="https://github.com/urther/algorithm-study/blob/main/algorithm-study(zerobase)/week5/1012.js">링크</a> | |
+
+
 ## WEEK6
 | 문제출처 | 분류 | 이름 | 링크 | 비고 |
 |----------|------|------|------|----|
