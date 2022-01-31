@@ -12,7 +12,7 @@ for (let i = 0; i < n; i++) {
   team[i] = inputs[i].split(" ").map(Number);
 }
 
-function DFS(currentLevel) {
+function DFS(currentLevel, index) {
   if (currentLevel === n / 2) {
     let sum = 0;
 
@@ -29,12 +29,12 @@ function DFS(currentLevel) {
     return;
   }
 
-  for (let i = currentLevel; i < n; i++) {
+  for (let i = index; i < n; i++) {
     checked[i] = true;
-    DFS(currentLevel + 1);
+    DFS(currentLevel + 1, i + 1);
     checked[i] = false;
   }
 }
 
-DFS(0);
+DFS(0, 0);
 console.log(answer);
