@@ -52,19 +52,39 @@
 //   return answer;
 // }
 
-function solution(n) {
-  const dp = Array(n + 1).fill(0);
+// function solution(n) {
+//   const dp = Array(n + 1).fill(0);
 
-  dp[0] = 1;
-  dp[1] = 1;
+//   dp[0] = 1;
+//   dp[1] = 1;
 
-  for (let i = 2; i <= n; i++) {
-    for (let j = 1; j <= i; j++) {
-      // console.log(dp[i]);
-      dp[i] += dp[i - j] * dp[j - 1];
+//   for (let i = 2; i <= n; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       // console.log(dp[i]);
+//       dp[i] += dp[i - j] * dp[j - 1];
+//     }
+//   }
+//   return dp[n];
+// }
+
+const solution = (n) => {
+  let answer = 0;
+
+  const dfs = (s, e) => {
+    if (s > n || e > n || e > s) return;
+    if (s === n && e === n) {
+      answer++;
+    } else {
+      dfs(s + 1, e);
+      dfs(s, e + 1);
     }
-  }
-  return dp[n];
-}
+  };
 
-console.log(solution(3));
+  dfs(0, 0);
+  return answer;
+};
+console.log(solution(3)); //5
+// 4 =>14
+// 5 =>42
+// 132 => 6
+//7 => 429
