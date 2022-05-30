@@ -1,63 +1,77 @@
-class MinHeap {
+class minHeap {
   constructor() {
-    this.nodes = [];
+    this.node = [];
   }
-  insert(value) {
-    this.nodes.push(value);
-    this.upheap();
-  }
-  upheap() {
-    let index = this.nodes.length - 1;
-    let node = this.nodes[index];
 
-    let parentNodeIndex = Math.floor((index - 1) / 2);
-    while (index > 0 && node[1] < this.nodes[parentNodeIndex][1]) {
-      this.nodes[index] = this.nodes[parentNodeIndex];
-      index = parentNodeIndex;
-      parentNodeIndex = Math.floor((index - 1) / 2);
+  insert(n) {
+    this.node.push(n);
+    this.upHeap();
+  }
+
+  upHeap() {
+    let index = this.size() - 1;
+
+    while (index > 0) {
+      const parent = parseInt(index / 2);
+
+      if (this.node[parent][1] < this.node[index][1]) break;
+
+      const temp = this.node[parent];
+      this.node[parent] = this.node[index];
+      this.node[index] = temp;
+      index = parent;
     }
-    this.nodes[index] = node;
   }
-  downheap() {
-    let index = 0;
-    let node = this.nodes[index];
 
-    while (index <= Math.floor((this.size() - 1) / 2)) {
-      let childNodeIndex = index * 2 + 1;
-      if (
-        childNodeIndex < this.size() &&
-        this.nodes[childNodeIndex + 1] &&
-        this.nodes[childNodeIndex][1] > this.nodes[childNodeIndex + 1][1]
-      ) {
-        childNodeIndex += 1;
-      }
-
-      if (
-        !this.nodes[childNodeIndex] ||
-        node[1] <= this.nodes[childNodeIndex][1]
-      ) {
-        break;
-      }
-
-      this.nodes[index] = this.nodes[childNodeIndex];
-      index = childNodeIndex;
-    }
-    this.nodes[index] = node;
-  }
   get() {
     if (this.size() === 1) {
-      return this.nodes.pop();
+      return this.node.pop();
     }
-    const node = this.nodes[0];
-    this.nodes[0] = this.nodes.pop();
-    this.downheap();
-    return node;
+
+    const target = this.node.shift();
+    this.downHeap();
+    return target;
   }
+
+  downHeap() {
+    const parentNode = this.node.pop();
+    this.node.unshift(parentNode);
+
+    let index = 0;
+    let childIndex;
+
+    while (index < parseInt(this.size() - 1) / 2) {
+      const left = index + 1;
+      const right = index + 2;
+
+      if (
+        this.node[left][1] <= this.node[right][1] ||
+        this.node[right] === undefined
+      ) {
+        childIndex = left;
+      } else {
+        childIndex = right;
+      }
+
+      if (this.node[childIndex][1] >= this.node[index][1]) break;
+
+      const temp = this.node[childIndex];
+      this.node[childIndex] = this.node[index];
+      this.node[index] = temp;
+      index = childIndex;
+    }
+  }
+
+  show() {
+    for (let i = 0; i < this.node.length; i++) {
+      console.log(this.node[i]);
+    }
+  }
+
   size() {
-    return this.nodes.length;
+    return this.node.length;
   }
 }
-
 const inputs = require("fs")
   .readFileSync(process.platform === "linux" ? "dev/stdin" : "input.txt")
   .toString()
@@ -66,7 +80,7 @@ const inputs = require("fs")
 
 const n = +inputs[0];
 const m = +inputs[1];
-const mh = new MinHeap();
+const mh = new minHeap();
 
 let index = 2;
 const graph = Array.from(Array(n + 1), () => []);
@@ -87,6 +101,7 @@ console.log(graph);
 while (mh.size()) {
   const [current, cost] = mh.get();
 
+  console.log("current", current);
   for (let [next, nextCost] of graph[current]) {
     if (dp[next] > cost + nextCost) {
       dp[next] = cost + nextCost;
