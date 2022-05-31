@@ -1,77 +1,50 @@
 class minHeap {
   constructor() {
-    this.node = [];
+    this.heap = [];
+    this.heap.push([Number.MIN_SAFE_INTEGER]);
   }
-
-  insert(n) {
-    this.node.push(n);
-    this.upHeap();
+  insert([a, b]) {
+    this.heap.push([a, b]);
+    this.upheap(this.heap.length - 1);
   }
-
-  upHeap() {
-    let index = this.size() - 1;
-
-    while (index > 0) {
-      const parent = parseInt(index / 2);
-
-      if (this.node[parent][1] < this.node[index][1]) break;
-
-      const temp = this.node[parent];
-      this.node[parent] = this.node[index];
-      this.node[index] = temp;
-      index = parent;
+  upheap(pos) {
+    let tmp = this.heap[pos];
+    while (tmp[1] < this.heap[parseInt(pos / 2)][1]) {
+      this.heap[pos] = this.heap[parseInt(pos / 2)];
+      pos = parseInt(pos / 2);
     }
+    this.heap[pos] = tmp;
   }
-
   get() {
-    if (this.size() === 1) {
-      return this.node.pop();
+    if (this.heap.length === 2) {
+      return this.heap.pop();
     }
-
-    const target = this.node.shift();
-    this.downHeap();
-    return target;
+    let res;
+    res = this.heap[1];
+    this.heap[1] = this.heap.pop();
+    this.downheap(1, this.heap.length - 1);
+    return res;
   }
-
-  downHeap() {
-    const parentNode = this.node.pop();
-    this.node.unshift(parentNode);
-
-    let index = 0;
-    let childIndex;
-
-    while (index < parseInt(this.size() - 1) / 2) {
-      const left = index + 1;
-      const right = index + 2;
-
-      if (
-        this.node[left][1] <= this.node[right][1] ||
-        this.node[right] === undefined
-      ) {
-        childIndex = left;
-      } else {
-        childIndex = right;
-      }
-
-      if (this.node[childIndex][1] >= this.node[index][1]) break;
-
-      const temp = this.node[childIndex];
-      this.node[childIndex] = this.node[index];
-      this.node[index] = temp;
-      index = childIndex;
+  downheap(pos, len) {
+    let tmp, i;
+    tmp = this.heap[pos];
+    while (pos <= parseInt(len / 2)) {
+      i = pos * 2;
+      if (i < len && this.heap[i][1] < this.heap[i + 1][1]) i++;
+      if (tmp[1] <= this.heap[i][1]) break;
+      this.heap[pos] = this.heap[i];
+      pos = i;
     }
+    this.heap[pos] = tmp;
   }
-
-  show() {
-    for (let i = 0; i < this.node.length; i++) {
-      console.log(this.node[i]);
-    }
-  }
-
   size() {
-    return this.node.length;
+    return this.heap.length - 1;
+  }
+  top() {
+    return this.heap[1];
   }
 }
+
 const inputs = require("fs")
   .readFileSync(process.platform === "linux" ? "dev/stdin" : "input.txt")
   .toString()
@@ -80,33 +53,39 @@ const inputs = require("fs")
 
 const n = +inputs[0];
 const m = +inputs[1];
+const graph = Array.from(Array(n + 1), () => []);
+const path = Array.from(Array(n + 1), () => []);
+const dp = Array(n + 1).fill(Infinity);
 const mh = new minHeap();
 
-let index = 2;
-const graph = Array.from(Array(n + 1), () => []);
-const dp = new Array(n + 1).fill(Infinity);
-
 for (let i = 0; i < m; i++) {
-  const [to, from, w] = inputs[index++].split(" ").map(Number);
-  graph[to].push([from, w]);
-  graph[from].push([to, w]);
+  const [a, b, c] = inputs[i + 2].split(" ").map(Number);
+  graph[a].push([b, c]);
 }
 
-const [to, from] = inputs[index].split(" ").map(Number);
+const [to, from] = inputs[m + 2].split(" ").map(Number);
 
-dp[to] = 0;
 mh.insert([to, 0]);
+dp[to] = 0;
 
-console.log(graph);
 while (mh.size()) {
-  const [current, cost] = mh.get();
+  const [node, w] = mh.get();
 
-  console.log("current", current);
-  for (let [next, nextCost] of graph[current]) {
-    if (dp[next] > cost + nextCost) {
-      dp[next] = cost + nextCost;
-      mh.insert([next, dp[next]]);
+  if (dp[node] < w) continue;
+
+  for (let [next, cost] of graph[node]) {
+    if (dp[next] > dp[node] + cost) {
+      dp[next] = dp[node] + cost;
+      mh.insert([next, dp[node] + cost]);
+      path[next] = [...path[node], node];
+      // console.log("node", node);
+      // console.log("next", next);
+      // console.log(dp);
     }
   }
 }
-console.log(dp);
+
+console.log(dp[from]);
+path[from].push(from);
+console.log(path[from].length);
+console.log(path[from].join(" "));
