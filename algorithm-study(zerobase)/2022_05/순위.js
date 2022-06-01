@@ -1,49 +1,45 @@
-const fs = require("fs");
-const input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
-// test
+function solution(n, results) {
+  var answer = 0;
 
-const [N, M] = input[0].split(" ").map(Number);
-const orders = input[1].split(" ").map(Number);
+  const graph = Array.from(Array(n + 1), () => Array(n + 1).fill(Infinity));
 
-class Deque extends Array {
-  front() {
-    return this[0];
+  for (let [win, lose] of results) {
+    graph[win][lose] = true;
+    graph[lose][win] = false;
+    graph[win][win] = 0;
+    graph[lose][lose] = 0;
   }
-  back() {
-    return this[this.length - 1];
-  }
-  popLeft() {
-    return this.shift();
-  }
-  rotate(idx) {
-    if (idx > 0) {
-      while (idx--) this.unshift(this.pop());
-    } else {
-      while (idx++) this.push(this.shift());
-    }
-  }
-}
 
-const solution = (N, M, orders) => {
-  const deque = new Deque();
-  let count = 0;
-  for (let i = 1; i <= N; i++) deque.push(i);
-  orders.forEach((order) => {
-    const idx = deque.indexOf(order);
-    if (idx === 0) deque.popLeft();
-    else {
-      if (idx <= Math.floor(deque.length / 2)) {
-        deque.rotate(-idx);
-        deque.popLeft();
-        count += idx;
-      } else {
-        deque.rotate(deque.length - idx);
-        count += deque.length - idx;
-        deque.popLeft();
+  for (let k = 1; k <= n; k++) {
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= n; j++) {
+        if (graph[i][j] === Infinity) {
+          if (graph[i][k] === true && graph[k][j] === true) graph[i][j] = true;
+          if (graph[i][k] === false && graph[k][j] === false)
+            graph[i][j] = false;
+        }
       }
     }
-  });
-  return count;
-};
+  }
 
-console.log(solution(N, M, orders));
+  for (let i = 1; i <= n; i++) {
+    let cnt = 0;
+    for (let j = 1; j <= n; j++) {
+      if (i === j) continue;
+      if (graph[i][j] !== Infinity) cnt++;
+    }
+    if (cnt === n - 1) answer++;
+  }
+
+  return answer;
+}
+
+console.log(
+  solution(5, [
+    [4, 3],
+    [4, 2],
+    [3, 2],
+    [1, 2],
+    [2, 5],
+  ])
+);
