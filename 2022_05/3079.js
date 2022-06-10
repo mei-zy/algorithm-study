@@ -29,8 +29,8 @@ while (left <= right) {
   if (people >= m) {
     right = mid - 1;
   } else {
-    answer = mid;
     left = mid + 1;
+    answer = left;
   }
 }
-console.log(left);
+console.log(answer);

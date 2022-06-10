@@ -6,8 +6,6 @@ function solution(n, results) {
   for (let [win, lose] of results) {
     graph[win][lose] = true;
     graph[lose][win] = false;
-    graph[win][win] = 0;
-    graph[lose][lose] = 0;
   }
 
   for (let k = 1; k <= n; k++) {

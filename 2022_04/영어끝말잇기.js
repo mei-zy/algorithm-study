@@ -27,7 +27,6 @@ function solution(n, words) {
     time[curNum - 1]++;
     curNum++;
     if (curNum > n) curNum = 1;
-    console.log(curNum, words[i]);
   }
 
   if (!flag) return [0, 0];

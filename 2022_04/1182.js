@@ -11,6 +11,7 @@ let count = 0;
 const pick = [];
 const dfs = (level) => {
   if (level === n) {
+    console.log(pick);
     const sum = pick.reduce((sum, val) => sum + val, 0);
     if (sum === s) count++;
     return;
