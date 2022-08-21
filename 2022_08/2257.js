@@ -22,41 +22,40 @@ const checkNumber = (i) => {
 const solution = () => {
   let answer = 0;
   let i = 0;
-  let current = 0;
+  let stack = [];
 
   while (true) {
     if (i === input.length) break;
 
     if (input[i] === "(") {
-      answer += current;
-      current = 0;
+      stack.push("(");
     } else if (input[i] === ")") {
-      if (i < input.length - 1 && checkNumber(input[i + 1])) {
-        current *= +input[i + 1];
-      }
-
-      answer += current;
-      current = 0;
-    } else {
-      if (i < input.length - 1 && checkNumber(input[i + 1])) {
-        current += score[input[i]] * +input[i + 1];
-      } else {
-        if (!checkNumber(input[i])) {
-          current += score[input[i]];
+      let sum = 0;
+      while (stack.length) {
+        const x = stack.pop();
+        if (x === "(") {
+          // 계산하고 break
+          stack.push(sum);
+          break;
         }
+        sum += x;
+      }
+    } else {
+      if (checkNumber(input[i])) {
+        const x = stack.pop();
+        stack.push(x * +input[i]);
+      } else {
+        stack.push(score[input[i]]);
       }
     }
-    console.log(
-      "word ",
-      input[i],
-      "current   : ",
-      current,
-      "answer   :",
-      answer
-    );
+
     i++;
   }
 
+  while (stack.length) {
+    answer += stack.pop();
+  }
+  // answer = stack[stack.length - 1];
   return answer;
 };
 
